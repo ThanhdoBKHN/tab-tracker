@@ -1,13 +1,30 @@
-<template>
+ <template>
   <div id="app">
-    <!-- <img src="./assets/logo.png"> -->
-    <router-view/>
+    <v-app>
+      <page-header />
+      <page-button />
+      <line-chart />
+      <main>
+        <v-container fluid>
+          <router-view></router-view>
+        </v-container>
+      </main>
+    </v-app>
   </div>
 </template>
 
 <script>
+import PageHeader from '@/components/Header.vue'
+import PageButton from '@/components/Button.vue'
+import LineChart from '@/components/Chart/LineChart.vue'
+
 export default {
-  name: 'App'
+  name: 'app',
+  components: {
+    PageHeader,
+    PageButton,
+    LineChart
+  }
 }
 </script>
 
@@ -19,5 +36,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.danger-alert {
+  color: red;
 }
 </style>

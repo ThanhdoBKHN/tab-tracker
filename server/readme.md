@@ -1,1 +1,0 @@
-"start": "./node_modules/nodemon/bin/nodemon.js src/app.js --exec 'npm run lint && node'",
