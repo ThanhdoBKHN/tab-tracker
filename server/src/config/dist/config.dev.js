@@ -1,5 +1,7 @@
-/* eslint-disable */ 
-const path = require('path')
+'use strict'
+
+/* eslint-disable */
+var path = require('path');
 
 module.exports = {
   port: process.env.PORT || 8081,
@@ -16,4 +18,4 @@ module.exports = {
   authentication: {
     jwtSecret: process.env.JWT_SECRET || 'secret'
   }
-}
+};

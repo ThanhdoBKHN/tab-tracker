@@ -69,9 +69,9 @@ export default {
   mounted () {
     this.renderChart(this.chartData, this.options)
 
-    // setInterval(() => {
-    //   this.fillData()
-    // }, 5000)
+    setInterval(() => {
+      this.fillData()
+    }, 5000)
   }
 }
 </script>
