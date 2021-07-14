@@ -1,32 +1,7 @@
 /* eslint-disable */
 const mqtt = require('mqtt')
-//var mqttClient = mqtt.connect('mqtt://localhost:1883')
-//const deviceTopic = 'iot20201/group2/devices'
 const deviceTopic = 'thanh/device'
-
-// // recv data json to broker in topic
-// mqttClient.on('message', (topic, payload) => {
-//     if (topic == sensorTopic){
-//         try {
-//             const message = JSON.parse(payload.toString())
-//             const sensor =  Sensor.create({
-//                 temperature: message.temperature,
-//                 humidity: message.humidity
-//             })
-//             console.log(sensor);
-//         } 
-//         catch(err) {
-//             console.log(err);
-//         }
-//     }
-// })
-
-// // sub topic
-// mqttClient.on('connect', () => {
-//     mqttClient.subscribe(sensorTopic)
-// })
-
-// pub mess on or off recviced to Vuejs frontend 
+// pub mess on or off recviced from Vuejs frontend to device ( LED )
 module.exports = {
     async sendCommand (req, res) {
         try {

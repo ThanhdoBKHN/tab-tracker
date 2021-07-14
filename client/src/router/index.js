@@ -17,10 +17,5 @@ export default new Router({
       name: 'login',
       component: Login
     }
-    // {
-    //   path: '/songs',
-    //   name: 'songs',
-    //   component: Login
-    // }
   ]
 })
